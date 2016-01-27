@@ -1,0 +1,47 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@base <http://melgi.github.io/card> .
+
+<>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <#me> ;
+  foaf:primaryTopic <#me> .
+
+<#me>
+  a con:Male, foaf:Person ;
+  con:familyName "Mels" ;
+  con:givenName "Giovanni" ;
+  con:mailbox <mailto:giovanni.mels@agfa.com> ;
+  con:office [
+    con:address [
+      con:street "Moutstraat 100" ;
+      con:postalCode "9000" ;
+      con:city <http://dbpedia.org/resource/Ghent> ;
+      con:country <http://dbpedia.org/resource/Belgium>
+    ] ;
+    geo:lat "51.03N" ;
+    geo:long "3.74E"
+  ] ;
+  con:personalTitle "ir" ;
+  con:publicHomePage <http://melgi.github.io/> ;
+  foaf:name "Giovanni Mels" ;
+  foaf:family_name "Mels" ;
+  foaf:givenname "Giovanni" ;
+  foaf:nick "Gio" ;
+  foaf:title "ir" ;
+  foaf:homepage <http://melgi.github.io/> ;
+  foaf:workplaceHomepage <http://www.agfahealthcare.com/global/en/main/> ;
+  foaf:knows <http://josd.github.io/card.rdf#me> .
+  
+<http://josd.github.io/card.rdf#me> a foaf:Person ;
+  rdfs:seeAlso <http://josd.github.io/card.rdf>;
+  foaf:name "Jos De Roo".
+  
+<http://dbpedia.org/resource/Ghent>
+	rdfs:label "Gent"@nl, "Ghent"@en.
+	
+<http://dbpedia.org/resource/Belgium>
+	rdfs:label "België"@nl, "Belgium"@en.

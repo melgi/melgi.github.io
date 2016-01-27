@@ -1,0 +1,53 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:con="http://www.w3.org/2000/10/swap/pim/contact#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <foaf:PersonalProfileDocument rdf:about="http://melgi.github.io/card">
+    <foaf:maker>
+      <foaf:Person rdf:about="http://melgi.github.io/card#me">
+        <con:mailbox rdf:resource="mailto:giovanni.mels@agfa.com"/>
+        <foaf:givenname>Giovanni</foaf:givenname>
+        <foaf:name>Giovanni Mels</foaf:name>
+        <foaf:title>ir</foaf:title>
+        <con:office rdf:parseType="Resource">
+          <con:address rdf:parseType="Resource">
+            <con:street>Moutstraat 100</con:street>
+            <con:postalCode>9000</con:postalCode>
+            <con:city>
+              <rdf:Description rdf:about="http://dbpedia.org/resource/Ghent">
+                <rdfs:label xml:lang="nl">Gent</rdfs:label>
+                <rdfs:label xml:lang="en">Ghent</rdfs:label>
+              </rdf:Description>
+            </con:city>
+            <con:country>
+              <rdf:Description rdf:about="http://dbpedia.org/resource/Belgium">
+                <rdfs:label xml:lang="nl">België</rdfs:label>
+                <rdfs:label xml:lang="en">Belgium</rdfs:label>
+              </rdf:Description>
+            </con:country>
+          </con:address>
+          <geo:lat>51.03N</geo:lat>
+          <geo:long>3.74E</geo:long>
+        </con:office>
+        <foaf:homepage rdf:resource="http://melgi.github.io/"/>
+        <con:personalTitle>ir</con:personalTitle>
+        <con:familyName>Mels</con:familyName>
+        <foaf:knows>
+          <foaf:Person rdf:about="http://josd.github.io/card.rdf#me">
+            <rdfs:seeAlso rdf:resource="http://josd.github.io/card.rdf"/>
+            <foaf:name>Jos De Roo</foaf:name>
+          </foaf:Person>
+        </foaf:knows>
+        <con:publicHomePage rdf:resource="http://melgi.github.io/"/>
+        <con:givenName>Giovanni</con:givenName>
+        <foaf:workplaceHomepage rdf:resource="http://www.agfahealthcare.com/global/en/main/"/>
+        <foaf:family_name>Mels</foaf:family_name>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Male"/>
+        <foaf:nick>Gio</foaf:nick>
+      </foaf:Person>
+    </foaf:maker>
+    <foaf:primaryTopic rdf:resource="http://melgi.github.io/card#me"/>
+  </foaf:PersonalProfileDocument>
+</rdf:RDF>
